@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="shortcut icon" href="favicon/childflower.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_back.css">
+    <style>
+        body{
+            background-color: rgb(171, 213, 220);
+            color: rgb(45, 53, 64);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 18px 20px 20px 20px;
+            cursor: default;
+        }
+        h1{
+            font-size: 2.3em;
+            margin-bottom: 50px;
+        }
+        p{
+            text-indent: 20px;
+            line-height: 30px;
+            font-size: 1.15em;
+        }
+        button{
+            margin-bottom: 7px;
+        }
+        button:hover{
+            box-shadow: 4px 4px 7px rgba(30, 73, 114, 0.524);
+        }
+        .tags{
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            width: fit-content;
+            padding: 0px 10px;
+            text-indent: 0px;
+            font-size: 1.05em;
+        }
+        .tags:hover{
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        section{
+            margin: 0px 80px 20px 50px;
+            width: fit-content;
+            display: inline-block;
+        }
+        #chart{
+            display: inline-block;
+            margin-inline-start: 70px;
+            opacity: 0.6;
+            box-shadow: 12px 12px 0px  rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="back"><a href="menu.html"><img src="images/left-arrow.png" alt="go to main menu"></a></button>
+    </header>
+    <h1>Grouping tags in HTML5</h1>
+    <p>HTML5's focus is centered in semantics, so are its grouping tags. <ins>They are a group of tags that work together to create the website's structure, organizing it in a semantic way.</ins> These tags don't add or change the content in any way since they work like div's.</p>
+    <section>  
+        <p class="tags">&lt;header> An introductory content;&nbsp;&nbsp;&nbsp;</p>
+        <p class="tags">&lt;nav> Set of navigation links;&nbsp;&nbsp;&nbsp;</p>
+        <p class="tags">&lt;footer> Usually a message, extra info;&nbsp;&nbsp;&nbsp;</p>
+        <p class="tags">&lt;main> Main content, unique to the website;&nbsp;&nbsp;&nbsp;</p>
+        <p class="tags">&lt;section> A piece of content that can stand on its own;&nbsp;&nbsp;&nbsp;</p>
+        <p class="tags">&lt;article> A container for self contained text;&nbsp;&nbsp;&nbsp;</p>
+        <p class="tags">&lt;aside> Peripheral content related to the article;&nbsp;&nbsp;&nbsp;</p>
+    </section>
+    <img src="images/layout.jpg" alt="tags chart" id="chart">
+</body>
+</html>

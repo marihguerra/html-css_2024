@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/128/Duck-Flat-icon.png" type="image/x-icon">
+    <title>My seventh exercise</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>Ordered and non ordered lists</h1>
+    <p>To create an ordered list, we use the OL tag to delimit the list and a LI tag to identify each item. We can also decide in which number it will start using the start attribute:</p>
+    <ol start="3">
+        <li> Item 3</li>
+        <li> Item 4</li>
+        <li> Item 5</li>
+    </ol>
+    <p>or</p>
+    <ol type="a"> <!--or capital-->
+        <li> Item 1</li>
+        <li> Item 2</li>
+        <li> Item 3</li>
+    </ol>
+    <p>or</p>
+    <ol type="i"> <!--or capital-->
+        <li> Item 1</li>
+        <li> Item 2</li>
+        <li> Item 3</li>
+    </ol>
+    <p>To create a non ordered list, we use the UL tag instead:</p>
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <p>or</p>
+    <ul type="circle">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <p>or</p>
+    <ul type="square">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <p>Putting everything together:</p>
+
+    <ol>
+        <li>Item 1</li>
+        <ol type="a">
+            <li>Item 1.1</li>
+            <li>Item 1.2</li>
+            <ul type="circle">
+                <li>Item 1.2.1</li>
+            </ul>
+    </ol>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item2.1</li>
+        </ol>
+    </ol>
+    <h1>Definition list</h1>
+    <p>Definition lists are always inside a DL tag (definition list). Each term comes in a DT tag (definition term) and each descripition comes in a DD (definition description).
+    </p>
+    <dl>
+    <dt>HTML</dt>
+       <dd>Markup language used to create content in sites.
+    <dt>CSS</dt>
+       <dd>Markup language to specify styles in sites.
+    <dt>Javascript</dt>
+       <dd>Programming language for creating interactions in sites.
+    </dl>    
+</body>
+</html>

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'IDroid';
+    src: url('finalproject_pack/fontes/idroid.otf') format('opentype');
+}
+
+:root{
+    --txt: rgb(27, 33, 34);
+    --upprhdr: rgb(86, 227, 160);
+    --navbttn: rgb(107, 233, 176);
+    --bcgttl: rgb(154, 241, 202);
+    --ttlc: rgb(19, 145, 82);
+    --blckshdw: rgb(48, 52, 55);
+    --txtshdw: rgba(31, 94, 65, 0.5);
+    --accntc: rgb(17, 131, 74);
+}
+body{
+    background-color:rgb(41, 35, 38);
+    background-image: linear-gradient(to bottom, rgb(75, 72, 78),rgb(62, 58, 68), rgb(51, 48, 54) 20%);
+    font: lighter 1em Arial, Helvetica, sans-serif;
+    color: var(--txt);
+    margin: 0%;
+    cursor: default;
+}
+#back{
+    position: absolute;
+}
+button{
+    margin: 18px 10px 10px 18px;
+    z-index: 2;
+}
+button:hover{
+    box-shadow: 4px 4px 5px rgba(31, 94, 65, 0.5);
+}
+header{
+    color: white;
+    background-image: linear-gradient(to right top, var(--ttlc) 20%, var(--upprhdr),var(--navbttn));
+    box-shadow: 6px 6px 20px var(--blckshdw);
+}
+h1{
+    font-family: "Play", sans-serif;
+    font-size: 2.5em;
+    text-shadow: 3px 2px 0px var(--txtshdw);
+    display: inline-block;
+    padding-top: 20px;
+    z-index: 1;
+    margin: 25px 50px 25px 50px;
+}
+h2{
+    font-family: "Play", sans-serif;
+    font-size: 1.12em;
+    text-shadow: 2px 2px 0px var(--txtshdw);
+    display: block;
+    margin: 0px 20px 35px 20px;
+}
+#titles{
+    text-align: center;
+}
+nav{
+    margin: 0px 10px 0px -20px;
+    width: fit-content;
+    position: relative;
+    animation-name: menu;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes menu{
+    from {left: 20px;}
+    to {left: 50px;}
+}
+nav a{
+    font-family: "Play", sans-serif;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+nav a:hover{
+    background-color: var(--navbttn);
+    color: var(--ttlc);
+    border-radius: 6px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+main{
+    background-color: white;
+    margin: 0px auto 40px auto;
+    max-width: 900px;
+    min-width: 320px;
+    padding: 5px 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 10px 7px var(--blckshdw);
+}
+h3{
+    font: 100 1.8em 'Idroid', sans-serif;
+    color: var(--ttlc);
+    text-decoration: underline;
+    margin-bottom: 45px;
+}
+h4{
+    font: 100 1.3em 'Idroid', sans-serif;
+    color: var(--ttlc);
+    background-image: linear-gradient( to right, var(--bcgttl), transparent);
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+p{
+    line-height: 30px;
+    text-indent: 20px;
+    text-align: justify;
+}
+img#dandroids{
+    width: 100%;
+    display: block;
+    margin: 20px auto 17px auto;
+}
+img#irina{
+    width: 95%;
+    border-radius: 7px;
+    display: block;
+    margin: 30px auto 30px auto;
+}
+img#bugdroid {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+main strong{
+    color: var(--accntc);
+}
+main a{
+    color: var(--accntc);
+    background-color: var(--bcgttl);
+    padding: 1px 0px 1px 4px;
+    font-weight: bold;
+    text-decoration: none;
+}
+main a:hover{
+    text-decoration: underline;
+}
+main a:active{
+    color: var(--upprhdr);
+}
+main a::after{
+    content: '\1F517';
+}
+abbr{
+    text-decoration: none;   
+}
+section.video{
+    background-color: var(--accntc);
+    margin: 20px -30px 30px -30px;
+    padding-bottom: 60%;
+    position: relative;
+}
+section.video iframe{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 85%;
+    height: 85%;
+}
+aside{
+    background-color: var(--bcgttl);
+    border-radius: 18px;
+    padding: 5px 18px;
+    margin: 0px 5px 25px 5px;
+}
+aside h5{
+    color: white;
+    font-family: "Play", sans-serif;
+    font-size: 1.1em;
+    background-color: var(--ttlc);
+    padding: 15px 15px 12px 15px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin: -5px -18px 18px -18px;
+}
+aside ul{
+    margin-left: 18px;
+    columns: 2;
+    column-gap: 15px;
+    list-style-type: '\2714\00A0\00A0';
+}
+footer{
+    background-image: linear-gradient(to right top, var(--ttlc) 20%, var(--upprhdr));
+    color: white;
+    margin-bottom: 0%;
+    padding: 1px 10px 1px 10px;
+}
+footer p{
+    font-family: "Play", sans-serif;
+    text-align: center;
+}

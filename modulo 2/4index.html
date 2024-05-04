@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="shortcut icon" href="favicon/childflower.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_back.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        body{
+            background-image: linear-gradient(to bottom,  rgb(172, 195, 70) 20%, rgb(127, 164, 63));
+            color: white;
+            font-family: "Zilla Slab", serif;
+            font-weight: lighter;
+            font-size: 1.3rem;
+            margin: 18px 20px 40px 20px;
+            cursor: default;
+        }
+        h1{
+            font-size: 2.3em;
+            margin-top: 10px;
+        }
+        main{
+            margin-left: 20px;
+        }
+        h2{
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+        #h22{
+            margin: 30px 0px 50px 0px;
+        }
+        p{
+            text-indent: 20px;
+            line-height: 30px;
+        }
+        .subject{
+            font-size: 1.17em;
+        }
+        #boxsubject{
+            width: fit-content;
+            display: inline-block;
+            margin-right: 45px;
+        }
+        #inlinesubject{
+            width: fit-content;
+            display: inline-block;
+            margin-right: 0px;
+        }
+        ul , ol{
+            line-height: 30px;
+        }
+        button{
+            margin-bottom: 10px;
+        }
+        button:hover{
+            box-shadow: 4px 4px 5px #5c700192;
+        }
+    </style>
+</head>
+<body>
+    <button id="back"><a href="menu.html"><img src="images/left-arrow.png" alt="go to main menu"></a></button>
+    <h1>Box model</h1>
+    <main>
+    <h2>Types of boxes</h2>
+    <div id="boxsubject">
+    <p class="subject">Box-level</p>
+    <ul type="square" ><li> elements are placed one below the other; </li><li> always skip a line, starting in a new one; </li><li> occupy the entire width of the viewport; </li></li><li> examples of tags: div, h1-h6, p, table, ul/ol, main, header, footer;</li>
+    </ul>
+    </div>
+    <div id="inlinesubject">
+    <p class="subject">Inline-level</p>
+    <ul type="square" ><li> elements are placed one on the left side of the other; </li><li> occupies the amount of space necessary to exibit the content; </li><li> doesn't skip a line; </li><li> examples of tags: span, a, img, button, label;</li>
+    </ul>
+    </div>
+    <h2 id="h22">Display property</h2>
+    <p>The display property is used to specify how an element is shown on a web page. Every HTML element has a default display value, and it is mostly block or inline. This CSS property is used to change the default display behavior of an element.</p>
+    </main>
+</body>
+</html>

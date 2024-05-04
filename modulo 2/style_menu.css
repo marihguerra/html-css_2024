@@ -1,0 +1,141 @@
+@charset "UTF-8";
+body{
+    background-color: #fbfbfe;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2b34;
+    font-size: 1.1em;
+    line-height: 30px;
+    cursor: default;
+}
+h1{
+    font-size: 3.5em;
+    margin: 50px 40px 70px 320px;
+    line-height: 70px;
+}
+#HTML{
+    color: #e67b65;
+    transition: text-shadow 0.4s;
+}
+#CSS{
+    color:#9c47eb;
+    transition: text-shadow 0.4s;
+}
+h1 :hover{
+    text-shadow: 6px 6px 0px #e0dcef ;
+}
+h2{
+    font-size: 1.6em;
+}
+#purpleicon{
+    position: absolute;
+    top: 90px;
+    right: 370px;
+    z-index: 3;
+}
+#orangeicon{
+    position: absolute;
+    top: 80px;
+    right: 450px;
+    z-index: 4;
+}
+#shadow1{
+    position: absolute;
+    top: 91px;
+    right: 442px;
+    z-index: 2;
+}
+#shadow2{
+    position: absolute;
+    top: 102px;
+    right: 362px;
+    z-index: 1;
+}
+.main{
+    background-color:#e0dcef;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: grid;
+    width: 860px;
+    margin: 20px 0px 40px 220px;
+    cursor: default;
+}
+#firstitle{
+    position: absolute;
+    top: 268px;
+}
+#scndtitle{
+    position: absolute;
+    top: 468px;
+}
+div.highlight{
+    background-color: #e67b6580;
+    width: 130px;
+    height: 15px;
+    margin-top: 30px;
+}
+button{
+    font: bold 1.3em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainmenu {
+    background-color: #9c47eb;
+    color: #fbfbfe;
+    border: #fbfbfe;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin-left: 38px;
+}
+.mainmenu:hover {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.dropdown {
+    display: block;
+    float: inline-end;
+    width: 50px;
+    margin-right: 135px;
+}
+.dropdown-child {
+    display: none;
+    background-color: #e0dcef;
+    color: #2d2b34;
+    width: 141px;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+}
+.dropdown-child a {
+    font: 0.98em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px;
+    color: #2d2b34;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-child :hover{
+    background-color: #efeaff;
+    color: #9c47eb;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.dropdown:hover .mainmenu{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #9c47eb90;
+}
+#gridp1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#gridp2{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+#grido1{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="shortcut icon" href="favicon/childflower.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_back.css">
+    <style>
+        @font-face {
+            font-family: 'Coffee Cake';
+            src: url('fonts/coffeecake_opentype.otf') format ('opentype'), url('fonts/coffeecake_truetype.ttf') format('truetype');
+        }
+        body{
+            background-color: rgb(232, 192, 230);
+            background-attachment: fixed;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /*safe combinations*/
+            font-size: 1.06em;
+            margin: 20px 20px 30px 20px;
+        }
+        div{
+            padding: 0px 20px;
+        }
+        h1{
+            font-size: 2.2em;
+            font-weight: 300;
+        }
+        h2{
+            font-size: 1.6em;
+            font-weight: 300;
+        }
+        h3{
+            font-family: 'Coffee Cake', sans serif;
+            font-size: 2em;
+            font-weight: 100;
+        }
+        p{
+            line-height: 25px;
+        }
+        button:hover{
+            box-shadow: 4px 4px 5px #5e326780;
+        }
+    </style> 
+</head>
+<body>
+    <button id="back"><a href="menu.html"><img src="images/left-arrow.png" alt="go to main menu"></a></button>
+    <h1>Working with fonts</h1>
+    <div>
+    <h2>Font-size</h2>
+    <p>CSS offers a number of different units for expressing length. There are absolute measurements, such as cm, mm, px, in (inches), pt (point), pc (pica) and relative measurements, like em (relative to capital M width, standart body-size, 16px), ex (relative to x-height), rem (em of the root font), vw (viewport width). The most recommended units are em and px, since the others fluctuate their size much more on different screens and browsers. </p>
+    <h2>Font weight, style and text decoration properties *</h2>
+    </div>
+    <ul type="circle">
+        <li>Font-weight: Dictates the thickness of the letters. The possible values are "lighter", "normal", "bold" and "bolder" or it can be indicated with hundreds between 100 and 900.</li>
+        <li>Font-style: Sets the font to italic style.</li>
+        <li>Text-decoration: Sets a styled underline, it can be solid, dotted, double, dashed, etc.</li>
+        <p>* You can combine all these properties in one shorthand, the "font" property. The typing order is font-style -> font-weight -> font-size -> font family.</p>
+    </ul>
+    <div>
+    <h2>Exporting fonts</h2>
+    <h3>Example of external font, Coffee Cake!</h3>
+    <p>When choosing an external font from websites like DaFont and MyFonts, you need to keep an eye for font formats. They can be .otf (opentype) .ttf (truetype) .eot (embedded-opentype) .aat (truetype apple advanced typography) or .svg (scalable vetor graphics). The usability of these formats depends on browser compatibility.</p>
+    <p>To load the chosen font on your website, you need to include the font file on your web server and use the @font-face rule on CSS, which specifies the font and saves it inside the code.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom selectors</title>
+    <link rel="shortcut icon" href="favicon/childflower.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_back.css">
+  <style>
+    body{
+      background-color: darkslateblue;
+      color:bisque;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.03em;
+      cursor: default;
+      margin-top: 19px;
+    }
+    button{
+      margin-left: 10px;
+    }
+    button:hover{
+      box-shadow: 4px 4px 7px #26015690;
+    }
+    p{
+      text-indent: 20px;
+      line-height: 30px;
+    }
+    main{
+      padding: 20px;
+    }
+    h1{
+      background-color: #26015650;
+      width: fit-content;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #h12{
+      font-size: 1.95em;
+    }
+    .example{
+      background-color: #26015650;
+      width: fit-content;
+      padding: 0px 20px 0px 0px;
+      border-radius: 10px;
+    }
+    div{
+      float: right;
+      margin-right: 30px;
+      background-color: #26015650;
+      border-radius: 20px;
+      width: 150px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+    #show{
+      display: none;
+      color:orange;
+    }
+    div:hover #show {
+      display: inline-block;
+      height: 10px;     
+      padding-bottom: 0px;
+      text-indent: 0px;
+      line-height: 30px;
+    }
+  </style>
+  </head>
+<body>
+  <button id="back"><a href="menu.html"><img src="images/left-arrow.png" alt="go to main menu"></a></button>
+  <h1>ID and Class selectors</h1>
+    <main>
+  <p>The <ins>ID</ins> attribute allows you to identify a specific element and create custom style settings only for that one element. In the CSS declaration, the given ID must be preceeded with a "#" symbol. You can also put the element's designation in front of the hashtag.</p>
+  <p class="example">ex: h1#principal{ }</p> 
+  <p>Alternatively, when you want to give two or more elements the same custom style, you can group them using the <ins>Class</ins> attribute, identified in the CSS declaration by an "." and the chosen group name. Usually, the name expresses the function or characteristic these elements have in common.</p>
+  <p class="example">ex: .buttons{ }</p>
+  <p>One element can be identified with two classes or a class and an id simultaneously according to the pecking order: the ID's custom style overlaps the class' style, since it is a group of unique characteristics for that element. Lastly, there is the "span" tag that can even increase the reach of these functions: you can customize the style of a part of a tag's content, like a word or a sentence, by putting the span "tag" around it and adding the id or class attribute.</p>
+    </main>
+  <h1 id="h12">Pseudo-classes and pseudo-elements</h1>
+     <main>
+  <p><ins>Pseudo-classes</ins> are associated with a special state of an element or class, so they are used for customizing the style of that state, like when the element is being hovered, empty or focused. This function works like a momentary class, that's why it's called "pseudo-class". In the CSS declaration, it is characterized by the presence of ":", preceeded with the element's HTML designation and the state the style will apply to. </p>
+<div>mouse over here !
+  <p id="show">hidden message...</p>
+</div>
+  <p class="example">ex: div:hover{ }</p>
+  <p>A <ins>pseudo-element</ins> lets you style a specific part of the selected element by declaring in the style sheet the HTML designation, the part of the <br>element that will be modified and "::" in between. Pseudo-elements are usually used for: styling the first letter or line of an element; inserting con-<br>tent before, or after, the element's content; etc.</p>
+  <p class="example">ex: p::first-line{ }</p>
+  </main>
+</body>
+</html>

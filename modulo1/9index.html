@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/128/Duck-Flat-icon.png" type="image/x-icon">
+    <title>My ninth document</title>
+    <style>
+        body{
+            background-color:rgb(159, 185, 208) ;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>Dinamic images</h1>
+    <p>Try to open this website in different devices or simply adjust your browser window.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagenspmg/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagenspmg/foto-m.png" type="image/png">
+        <img src="imagenspmg/foto-g.png" alt="Flexible image">
+    </picture>
+    <h1>Playing audios</h1>
+    <p>We're gonna learn how to play audios in HTML5. In the audio tag, you can put attributes like "auto" and "autoplay" for the audio to play as soon as you enter the website, "loop" to play it on loop, "metadata" and "controls" so you can control the audiofile and if you don't want it all to be downloaded right away, only the main data.</p>
+    <audio preload="metadata" controls loop>
+        <source src="audio/Sailing - Telecasted.mp3" type="audio/mpeg">
+        <source src="audio/Sailing - Telecasted.ogg" type="audio/ogg"> <!--OGG is an useful audio file format in case the user's browser cant load a mp3 file-->
+        <p>Unfortunately your browser cannot play audio files. 
+            <a href="audio/Sailing - Telecasted.mp3" download="audio.mp3" type="audio/mpeg">Click here</a> if you want to download the mp3 file.
+        </p>
+    </audio>
+</body>
+</html>

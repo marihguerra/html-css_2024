@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+body{
+    background-image:linear-gradient(to bottom, rgb(37, 31, 34)50%,rgb(27, 19, 23));
+    background-attachment: fixed;
+    color:rgb(255, 240, 247);
+    text-align: center;
+    margin: 50px 80px;
+    font-size: 18px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 28px;
+}
+button{
+    font-family: "DM Serif Display", serif;
+    font-size: 17px;
+    background-color:rgba(31, 26, 28, 0.902);
+    margin: 25px;
+    border: none;
+}
+button :link, button :visited{
+    color:rgb(255, 240, 247);
+    padding: 10px;
+    border-color:rgb(255, 224, 245);
+    border-style: double;
+    border-width: 4px;
+    text-decoration: none;
+}
+button :hover, button :active{
+    border: none;
+    background-color:rgb(255, 240, 247);
+    color:rgb(37, 31, 34);
+    padding: 13px 13px;
+    text-decoration: none;
+}
