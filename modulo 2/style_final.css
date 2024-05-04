@@ -25,6 +25,9 @@ body{
     margin: 0%;
     cursor: default;
 }
+div.everything{
+    min-width: 400px;
+}
 #back{
     position: absolute;
 }
@@ -90,7 +93,7 @@ main{
     background-color: white;
     margin: 0px auto 40px auto;
     max-width: 900px;
-    min-width: 320px;
+    min-width: 400px;
     padding: 5px 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
