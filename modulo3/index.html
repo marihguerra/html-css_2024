@@ -5,9 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background properties</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
         body{
-            background-image: url(images/wallpaper006.jpg);
-            color: rgb(40, 32, 44);
+            height: 100vh;
+            background-color: darkgray;
+            background-image: url(images/wallpaper004.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #3a323f;
+            font-size: 1.1em;
+            font-family: "Overpass", sans-serif;
+        }
+        h1{
+            font-weight: 800;
+            font-size: 2.4em;
+            margin: 40px 20px 20px 20px;
+            background-image: linear-gradient( to right, #d3cde7, transparent );
+            border-radius: 10px;
+            width: fit-content;
+        }
+        main{
+            margin: 40px 70px;
+            max-width: 800px;
+        }
+        h2{
+            font-size: 1.6em;
+            font-weight: 800;
+            margin: 30px 5px 40px 0px;
+        }
+        .h2special{
+            margin: 40px 5px 48px 0px;
+        }
+        main p{
+            margin-bottom: 25px;
+        }
+        aside{
+            background-image: linear-gradient( to bottom left, #dad4ee 30%, transparent );
+            border: 3px solid #54495d;
+            font-size: 0.95em;
+            width: 285px;
+            height: 86px;
+            margin: 40px;
+            padding: 10px 15px;
+            line-height: 27px;
+            position: fixed;
+            bottom: 5px;
+            right: 30px;
+            border-radius: 15px;
+        }
+        h3{
+            margin: 0px;
+            padding: 0px;
+            font-weight: 700;
+        }
+        aside p{
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        footer{
+            height: 5px;
+            background-image: ur;
         }
         div#ex1{
             background-color: blueviolet;
@@ -22,7 +82,7 @@
             display: inline-block;
             width: 200px;
             height: 200px;
-            border: 3px solid #666666;
+            border: 3px solid #54495d;
             border-radius: 10px;
             margin: 5px;
         }
@@ -31,41 +91,80 @@
             background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
             background-size: 100px;
             width: 400px;
-            height: 340px;
+            height: 330px;
             margin: 5px;
         }
         div#ex5{
-            display: inline-block;
+            display: block;
             background-image: url("images/duck.png");
             background-repeat: repeat-x;
-            height: 64px;
             width: 450px;
-            margin: 10px;
+            height: 64px;
+            margin: 15px;
+        }
+        div.sky{
+            width: 225px;
+            height: 150px;
+            border: 3px solid #54495d;
+            border-radius: 10px;
+            margin: 0.5px;
+            background-image: url(images/wallpaper002small.jpg);
+        }
+        div#ex6{
+            background-position: top left;
+        }
+        div#ex7{
+            background-position: top right;
+        }
+        div#ex8{
+            background-position: bottom left;
+        }
+        div#ex9{
+            background-position: bottom right;
+        }
+        div#skycolumn1{
+            display: flex;
+        }
+        div#skycolumn2{
+            display: flex;
         }
     </style>
 </head>
 <body>
-    <h1>Background properties</h1>
-    <h2>background-image</h2>
-        <div class="square" id="ex1">
+    <header>
+        <h1>Background properties</h1>
+    </header>
+    <main>
+        <h2>{background-image}</h2>
+        <p>The <strong>background-image</strong> property sets one or more background images for an element. By default, it is placed at the top-left corner of an element and it will be repeated both vertically and horizontally to cover the element's size. The value can be set by referencing an image file by url() or using color gradients (linear, radial). It is important to have a background-color behind the background-image.</p>
+            <div class="square" id="ex1"></div>
+            <div class="square" id="ex2"></div>
+            <div class="square" id="ex3"></div>
+        <h2>{background-repeat}</h2>
+        <p> <strong>Background-repeat</strong> determines how the background-image repetition will work: repeat by default, no repeat, repeat only horizontally (repeat-x) or repeat only vertically (repeat-y).</p>
+            <div id="ex4"></div>
+            <div id="ex5"></div>
+        <h2 class="h2special">{background-position}</h2>
+        <p>The <strong>background-position</strong> is a property that positions where a background-image will start to display inside the element. Examples of existing values are bottom left, top center, bottom right or percentages instead like 50% 50% and 25% 75%.</p>
+            <div id="skycolumn1">
+                <div class="sky" id="ex6"></div>
+                <div class="sky" id="ex7"></div>
+            </div>
+            <div id="skycolumn2">
+                <div class="sky" id="ex8"></div>
+                <div class="sky" id="ex9"></div>
+            </div>
+        <h2 class="h2special">{background-size}</h2>
+        <p>The <strong>background-size</strong> property specifies the size of background-images. There are different ways you can set it: entering measurable values (px, percentage..) or using keywords such as contain and cover; "contain" will place your image inside the limits of the element without cutting any of it, and "cover" will fully fill the element's dimensions with the background-image and cover some of it if necessary. This property is being exemplified in the background of this page.</p>
+        <h2 class="h2special">{background-attachment}</h2>
+        <p>The <strong>background-attachment</strong> will determine how the <background-image></background-image> behaves when the page is scrolled. If set to "scroll", the image will scroll with the page; if set to "fixed" it will be static; and if set to "local" the image will scroll with the element's contents. This property is also being exemplified in the background of this page.</p>
+    </main>
+    <aside>
+        <h3>shorthand :</h3>
+        <p> color > image > position > repeat > size > attachment </p>
+    </aside>
+    <footer>
 
-        </div>
-        <div class="square" id="ex2">
-
-        </div>
-        <div class="square" id="ex3">
-
-        </div>
-    <h2>background-repeat</h2>
-        <div id="ex4">
-
-        </div>
-        <div id="ex5">
-
-        </div>
-    <h2>background-position</h2>
-    <h2>background-size</h2>
-    <h2>background-attachment</h2>
-    <h3>shorthand</h3>
+    </footer>
 </body>
 </html>
