@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&&family=Sedgwick+Ave&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color:burlywood;
+}
+
+header{
+    background-color: rgb(20, 13, 13);
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+}
+
+h1{
+    padding: 10px;
+    font-variant: small-caps;
+    font-family: "Sedgwick Ave", cursive;
+    font-size: 10vw;
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 4.5em;
+    }
+}
+
+h2{
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 20px 20px 8px 20px;
+}
+
+a{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color:rgb(250, 255, 220);
+}
+
+section{
+    font-family: "Sriracha", cursive;
+    padding: 10vh 30px;
+    line-height: 1.8em;
+    font-size: 3.45vw;
+}
+
+@media (min-width: 650px){
+    section{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 540px){
+    section{
+        font-size: 1.16em;
+    }
+}
+
+section.normal{
+    background-color: white;
+    color: rgb(20, 13, 13);
+}
+
+section.image{
+    color: aliceblue;
+}
+
+section.normal p{
+    padding: 15px;
+}
+
+section.image p{
+    padding: 15px;
+    background-color: rgba(20, 13, 13, 0.6);
+    width: fit-content;
+}
+
+footer{
+    background-color: rgb(20, 13, 13);
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px){
+    footer{
+        font-size: 0.89em;
+    }
+}
