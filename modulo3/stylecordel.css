@@ -9,9 +9,10 @@
 
 html, body{
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color:#666666;
 }
-
 header{
     background-color: rgb(20, 13, 13);
     color: aliceblue;
@@ -81,16 +82,31 @@ section.normal{
 
 section.image{
     color: aliceblue;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.normal p{
-    padding: 15px;
+    padding: 17px;
 }
 
 section.image p{
-    padding: 15px;
-    background-color: rgba(20, 13, 13, 0.6);
+    padding: 17px;
+    background-color: rgba(20, 13, 13, 0.55);
+    border-radius: 8px;
+    text-shadow: 2px 2px 2px #333;
     width: fit-content;
+}
+
+section#img1{
+    background-image: url(cordel_pack/images/background001.jpg);
+    box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+section#img2{
+    background-image: url(cordel_pack/images/background002.jpg);
+    box-shadow: inset 8px 8px 16px rgba(20, 13, 6, 0.6);
 }
 
 footer{
