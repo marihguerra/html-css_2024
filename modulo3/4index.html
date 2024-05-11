@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #9ab0c0;
+            color: white;
+        }
+        h1{
+            font-size: 2.4em;
+            text-shadow: 6px 4px 4px #7e96a9;
+            margin: 30px 40px 10px 30px;
+        }
+        main{
+            display: flex;
+        }
+        section{
+            width: 50%;
+            padding: 5px 50px;
+        }
+        h2{
+            font-size: 1.7em;
+            text-shadow: 5px 3px 3px #7e96a9;
+        }
+        p{
+            font-size: 1.15em;
+        }
+        table{
+            background-color: white;
+            color: #112430;
+            margin: 40px auto;
+            border-collapse: collapse;
+            box-shadow: 4px 4px 7px #7e96a9;
+        }
+        table#a{
+            width: 400px;
+        }
+        table#a th {
+            background-color:#67b1c1;
+        }
+        table#a td, th{
+            border: 2px solid #112430;
+            padding: 5px;
+        }
+        td.special{
+            background-color: #c0e1eb;
+        }
+        table#b {
+            width: 200px;
+            height: 200px;
+            border: 5px double #112430 ;
+        }
+        table#b td{
+            text-align: center;
+            vertical-align: middle;
+            border: 2px solid #112430;
+        }
+        table#c{
+            width: 400px;
+            margin-top: 15px;
+        }
+        table#c td, th{
+            border: 2px solid #112430;
+            padding: 7px;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: #555;
+            color: white;
+        }
+        table#c tr:nth-child(2n){
+            background-color: #ccc;
+        }
+        td.num{
+            text-align: right;
+        }
+        div{
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 45px 20px 0px 55px
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <main>
+        <section>
+            <h2>First tests</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam inventore quisquam labore eligendi earum, alias molestias itaque reiciendis dignissimos et quo minus animi iure vitae! Praesentium nam necessitatibus est quos.</p>
+            <table id="a">
+                <tr>
+                    <th>A
+                    <th>B
+                    <th>C
+                </tr>
+                <tr>
+                    <td>A1
+                    <td>B1
+                    <td>C1
+                </tr>
+                <tr>
+                    <td>A2
+                    <td>B2
+                    <td>C2
+                </tr>
+                <tr>
+                    <td>A3
+                    <td>B3
+                    <td class="special">C3
+                </tr>
+                <tr>
+                    <td>A4
+                    <td>B4
+                    <td class="special">C4
+                </tr>
+                <tr>
+                    <td>A5
+                    <td>B5
+                    <td>
+                </tr>
+            </table>
+            <table id="b">
+                <tr>
+                    <td>I
+                    <td>II
+                </tr>
+                <tr>
+                    <td>III
+                    <td>IV
+                </tr>
+            </table>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempore, repellendus culpa accusamus cumque, laudantium maiores veritatis nemo officia pariatur qui, hic consequuntur? Rem optio, odit fugit quasi enim nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo beatae odio optio esse animi exercitationem nihil culpa recusandae. Maximus dolores laboriosam iste blanditiis?</p>
+        </section>
+        <section>
+            <h2>Bigger tables</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eius. Dolores sapiente temporibus ut ab eum consequatur molestiae nulla eius placeat ad autem rem a deleniti officiis, aliquid sed quos.</p>
+            <div>
+                <caption>População das Unidades Federativas brasileiras</caption>
+            </div>
+            <table id="c">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 250px;">Estado
+                        <th scope="col">População
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo
+                        <td class="num">44 411 238
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais
+                        <td class="num">20 538 718
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro
+                        <td class="num">16 054 524
+                    </tr>
+                    <tr>
+                        <td>Bahia
+                        <td class="num">14 141 626
+                    </tr>
+                    <tr>
+                        <td>Paraná
+                        <td class="num">11 444 380
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul
+                        <td class="num">10 882 965
+                    </tr>
+                    <tr>
+                        <td>Pernambuco
+                        <td class="num">9 058 931
+                    </tr>
+                    <tr>
+                        <td>Ceará
+                        <td class="num">8 794 957
+                    </tr>
+                    <tr>
+                        <td>Pará
+                        <td class="num">8 121 025
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina
+                        <td class="num">7 610 361
+                    </tr>
+                    <tr>
+                        <td>Goiás
+                        <td class="num">7 056 495
+                    </tr>
+                    <tr>
+                        <td>Maranhão
+                        <td class="num">6 775 805
+                    </tr>
+                    <tr>
+                        <td>Paraíba
+                        <td class="num">3 974 687
+                    </tr>
+                    <tr>
+                        <td>Amazonas
+                        <td class="num">3 941 613
+                    </tr>
+                    <tr>
+                        <td>Espírito Santo
+                        <td class="num">3 833 712
+                    </tr>
+                    <tr>
+                        <td>Mato Grosso
+                        <td class="num">3 658 649
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Norte
+                        <td class="num">3 302 729
+                    </tr>
+                    <tr>
+                        <td>Piauí
+                        <td class="num">3 271 199
+                    </tr>
+                    <tr>
+                        <td>Alagoas
+                        <td class="num">3 127 683
+                    </tr>
+                    <tr>
+                        <td>Distrito Federal
+                        <td class="num">2 817 381
+                    </tr>
+                    <tr>
+                        <td>...
+                        <td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total de habitantes
+                        <td class="num"><strong>203.062.512</strong>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
