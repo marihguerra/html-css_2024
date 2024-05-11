@@ -5,6 +5,7 @@
     margin: 0px;
     padding: 0px;
     cursor: default;
+    overflow-x: hidden;
 }
 
 html, body{
