@@ -19,7 +19,7 @@
         main{
             display: flex;
         }
-        @media (max-width: 850px){
+        @media (max-width: 900px){
             main{
                 flex-direction: column;
             }
@@ -29,7 +29,7 @@
             padding: 5px 40px;
         }
         
-        @media (max-width: 850px){
+        @media (max-width: 900px){
             section{
                 width: 85%;
             }
@@ -76,6 +76,7 @@
         table#c{
             width: 400px;
             margin-top: 15px;
+            position: relative;
         }
         table#c td, th{
             border: 2px solid #112430;
@@ -91,6 +92,11 @@
         }
         td.num{
             text-align: right;
+        }
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: #555;
         }
         div{
             font-size: 1.3em;
@@ -161,7 +167,7 @@
                     <td>IV
                 </tr>
             </table>
-            <p>Incorporating CSS you can create borders, padding, collapse borders and align the contents of a cell horizontally and vertically, besides adding colors to your table.</p>
+            <p>Incorporating CSS, you can create borders, padding, collapse borders and align the contents of a cell horizontally and vertically, besides adding colors to your table.</p>
         </section>
         <section>
             <h2>Bigger tables</h2>
