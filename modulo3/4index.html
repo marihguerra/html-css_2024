@@ -8,6 +8,7 @@
         body{
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: #9ab0c0;
+            background-image: linear-gradient(to bottom, #9ab0c0, #7e96a9);
             color: white;
         }
         h1{
@@ -18,23 +19,36 @@
         main{
             display: flex;
         }
+        @media (max-width: 850px){
+            main{
+                flex-direction: column;
+            }
+        }
         section{
             width: 50%;
-            padding: 5px 50px;
+            padding: 5px 40px;
+        }
+        
+        @media (max-width: 850px){
+            section{
+                width: 85%;
+            }
         }
         h2{
-            font-size: 1.7em;
+            font-size: 1.8em;
             text-shadow: 5px 3px 3px #7e96a9;
         }
         p{
-            font-size: 1.15em;
+            font-size: 1.16em;
+            text-indent: 10px;
+            text-align: justify;
         }
         table{
             background-color: white;
             color: #112430;
             margin: 40px auto;
             border-collapse: collapse;
-            box-shadow: 4px 4px 7px #7e96a9;
+            box-shadow: 4px 4px 7px #738fa6;
         }
         table#a{
             width: 400px;
@@ -81,7 +95,21 @@
         div{
             font-size: 1.3em;
             font-weight: bold;
-            margin: 45px 20px 0px 55px
+            text-align: center;
+            text-decoration: underline;
+            margin: 45px auto 0px auto
+        }
+        td#threedots{
+            text-align: center;
+        }
+        span{
+            font-size: 2.2em;
+            line-height: 5px;
+        }
+        ins{
+            font-weight: 600;
+            font-size: 0.96em;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -89,8 +117,8 @@
     <h1>Tables</h1>
     <main>
         <section>
-            <h2>First tests</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam inventore quisquam labore eligendi earum, alias molestias itaque reiciendis dignissimos et quo minus animi iure vitae! Praesentium nam necessitatibus est quos.</p>
+            <h2>Simple tables</h2>
+            <p>HTML <ins>Tables</ins> allow you to display and organize data in rows and collumns inside your website. It consists of an hierarchy of cells:&nbsp;&nbsp;<ins>&lt;th&gt;</ins> cells and <ins>&lt;td&gt;</ins> cells   (tableheaders and tabledata) inside a <ins>&lt;tr&gt;</ins> (tablerow).&nbsp; HTML5 makes closing tags optional for these three tags.</p>
             <table id="a">
                 <tr>
                     <th>A
@@ -133,11 +161,12 @@
                     <td>IV
                 </tr>
             </table>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempore, repellendus culpa accusamus cumque, laudantium maiores veritatis nemo officia pariatur qui, hic consequuntur? Rem optio, odit fugit quasi enim nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo beatae odio optio esse animi exercitationem nihil culpa recusandae. Maximus dolores laboriosam iste blanditiis?</p>
+            <p>Incorporating CSS you can create borders, padding, collapse borders and align the contents of a cell horizontally and vertically, besides adding colors to your table.</p>
         </section>
         <section>
             <h2>Bigger tables</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eius. Dolores sapiente temporibus ut ab eum consequatur molestiae nulla eius placeat ad autem rem a deleniti officiis, aliquid sed quos.</p>
+            <p>More complex tables with more data require preciser organization, and this is what semantic table tags are for. They must be placed inside the table tag and they arrange the data in three sections:&nbsp;&nbsp;<ins>&lt;thead&gt;</ins>, &nbsp;<ins>&lt;tbody&gt;</ins> and <ins>&lt;tfoot&gt;</ins>.</p>
+            <p>Also, to associate header cells with data cells you can use the <ins>scope</ins> attribute. It identifies whether a <ins>&lt;th&gt;</ins> cell is a header for a row,&nbsp;column, or group of rows or columns.</p>
             <div>
                 <caption>População das Unidades Federativas brasileiras</caption>
             </div>
@@ -230,8 +259,7 @@
                         <td class="num">2 817 381
                     </tr>
                     <tr>
-                        <td>...
-                        <td>
+                        <td colspan="2" id="threedots"><span>...</span>
                     </tr>
                 </tbody>
                 <tfoot>
