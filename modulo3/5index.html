@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables challenge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+        body{
+            background-color: #40006e;
+            background-image: linear-gradient(to right bottom, #40006e, #3b003b);
+            color: white;
+            font-family: "DotGothic16", sans-serif;
+        }
+        main{
+            max-width: 60%;
+            margin: auto;
+        }
+        h1{
+            font-size: 2.6em;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        h2{ 
+            font-size: 1.4em;
+            margin: 30px;
+            padding: 2px 9px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 40px auto;
+            width: 500px;
+            font-size: 1.05em;
+        }
+        th, td{
+            border: 3px dashed white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Table challenge</h1>
+        <h2>1.</h2>
+        <table>
+            <tr>
+                <td colspan="4">a
+                <td rowspan="4">b
+            </tr>
+            <tr>
+                <td rowspan="4">c
+                <td>d
+                <td>e
+                <td>f
+            </tr>
+            <tr>
+                <td>g
+                <td>h
+                <td>i
+            </tr>
+            <tr>
+                <td>j
+                <td>k
+                <td>l
+            </tr>
+            <tr>
+                <td colspan="4">m
+            </tr>
+        </table>
+        <h2>2.</h2>
+        <table>
+            <tr>
+                <th colspan=2" rowspan="2">Header (spans 2 columns and 2 rows)
+                <td>data
+            </tr>
+            <tr>
+                <td>data
+            </tr>
+            <tr>
+                <td>data
+                <td>data
+                <td>data
+            </tr>
+        </table>
+        <h2>3.</h2>
+        <table>
+            <tr>
+                <td>1
+                <td>2
+                <td rowspan="2">3
+                <td>4
+            </tr>
+            <tr>
+                <td>5
+                <td>6
+                <td>7
+            </tr>
+            <tr>
+                <td colspan="3">8
+                <td>9
+            </tr>
+            <tr>
+                <td rowspan="2">10
+                <td colspan="2">11
+                <td>12
+            </tr>
+            <tr>
+                <td>13
+                <td>14
+                <td>15
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
