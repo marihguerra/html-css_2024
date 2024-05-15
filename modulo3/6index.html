@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive tables</title>
+    <style>     
+        body{ 
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:floralwhite;
+            color: #342a12;
+        }
+        main{
+            margin: 35px 50px;
+            max-width: 717px;
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+            font-size: 2.2em;
+            margin-bottom: 50px;
+        }
+        span{
+            font-size: 0.9em;
+        }
+        table{
+            width: 700px;
+        }
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+            font-size: 1.4em;
+            font-weight: bolder;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        th, td{
+            border: 2px solid #251512;
+            padding: 8px;
+        }
+        th{
+            background-image: linear-gradient(to bottom, transparent, #d89d061f 90%);
+        }
+        td{
+            text-align: left;
+            color: black;
+        }
+        td.birth, td.rg{
+            text-align: center;
+        }
+        th#larger{
+            padding: 8px 30px;
+        }
+        col.a{
+            background-color: #ffe0b5;
+        }
+        col.b{
+            background-color: #ffecc5;
+        }
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Responsive tables&nbsp;<span>&#10064;</span></h1>
+        <h2>Registration form</h2>
+        <div id="container">
+            <table>
+                <colgroup>
+                    <col class="a">
+                    <col class="b" span="4">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th id="larger">Name
+                        <th>Gender
+                        <th>Date of birth
+                        <th>Occupation
+                        <th>RG
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Maria
+                        <td>Female
+                        <td class="birth">21/03/1999
+                        <td>Journalist
+                        <td class="rg">26.287.780-0
+                    </tr>
+                    <tr>
+                        <td>Cláudio
+                        <td>Male
+                        <td class="birth">09/11/1996
+                        <td>Programmer
+                        <td class="rg">56.577.390-4
+                    </tr>
+                    <tr>
+                        <td>Gustavo
+                        <td>Male
+                        <td class="birth">30/08/1981
+                        <td>Teacher
+                        <td class="rg">13.957.993-7
+                    </tr>
+                    <tr>
+                        <td>Hélio
+                        <td>Male
+                        <td class="birth">17/02/2001
+                        <td>Salesman
+                        <td class="rg">27.228.495-9
+                    </tr>
+                    <tr>
+                        <td>Marta
+                        <td>Female
+                        <td class="birth">04/04/1989
+                        <td>Doctor
+                        <td class="rg">65.525.091-x
+                    </tr>
+                    <tr>
+                        <td>Otávio
+                        <td>Male
+                        <td class="birth">24/07/1992
+                        <td>Nutritionist
+                        <td class="rg">83.193.022-1
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
